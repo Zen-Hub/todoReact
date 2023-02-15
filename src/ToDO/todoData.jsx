@@ -4,17 +4,17 @@ import "./index.css";
 
 const toDoDateArr = [
   {
-    _id: Date.now(),
+    _id: 0,
     inpText: "GO BALI",
     isChecked: true,
   },
   {
-    _id: Date.now(),
+    _id: 1,
     inpText: "TAKE MANY",
     isChecked: false,
   },
   {
-    _id: Date.now(),
+    _id: 2,
     inpText: "свалить из страны",
     isChecked: false,
   },
