@@ -7,8 +7,15 @@ const ToDoItemFun = (props) => {
       <div className="container">
         <div className="todo_list">
           <h1>ToDo List</h1>
+         
+            <input
+              type="text"
+              className="inpTask "
+              inpTextProps={props.inpText}
+            />
 
-          <input type="text" className="inpTask " inpTextProps={props.inpText} />
+            
+         
 
           <button className="btnAdd btnstyle">add</button>
         </div>
@@ -17,4 +24,4 @@ const ToDoItemFun = (props) => {
   );
 };
 
-export default ToDoItem;
+export default ToDoItemFun;
