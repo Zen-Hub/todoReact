@@ -4,21 +4,10 @@ import "./index.css";
 const ToDoItemFun = (props) => {
   return (
     <div>
-      <div className="container">
-        <div className="todo_list">
-          <h1>ToDo List</h1>
-         
-            <input
-              type="text"
-              className="inpTask "
-              inpTextProps={props.inpText}
-            />
-
-            
-         
-
-          <button className="btnAdd btnstyle">add</button>
-        </div>
+      <div className="allTask">
+        <div className="taskText">{props.inpTextProps}</div>
+        <button className="done btnstyle ">done</button>
+        <button className="delete btnstyle ">delete</button>
       </div>
     </div>
   );
