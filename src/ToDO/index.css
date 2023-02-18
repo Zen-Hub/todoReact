@@ -179,11 +179,8 @@ h1 {
 
 }
 
-.ulTodo {
-    display: grid;
-}
 
-.liAllTask {
+.allTask {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -193,7 +190,6 @@ h1 {
     border: 1px solid #0ee9a7;
     border-radius: 5px;
     box-shadow: 0 2px 10px 0 #074b83;
-
 }
 
 .taskText {
