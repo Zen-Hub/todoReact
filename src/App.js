@@ -6,11 +6,16 @@ import TodoData from './ToDO/TodoData'
 
 function App() {
 
+  const doneAddFun = (id) => {
+    console.log('DONe',id)
+  }
+
   const todoItems = TodoData.map(itemArr => {
     return (
       <ToDoitem
-        key={itemArr._id}
-        inpTextProps={itemArr.inpText}
+        key={todoDateArr._id}
+        inpTextProps={todoDateArr.inpText}
+        addDoneProps={() => { doneAddFun(todoDateArr._id) }}
       />
     )
   })
@@ -22,5 +27,3 @@ function App() {
     </div>
   );
 }
-
-export default App;
