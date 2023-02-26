@@ -134,7 +134,7 @@ body {
     display: grid;
     justify-items: center;
     align-items: center;
-    min-height: 600px;
+    min-height: 60px;
 }
 
 /* Добавляем этот класс если дело важное */
@@ -180,6 +180,7 @@ h1 {
 }
 
 
+
 .allTask {
     display: flex;
     flex-direction: row;
@@ -190,6 +191,7 @@ h1 {
     border: 1px solid #0ee9a7;
     border-radius: 5px;
     box-shadow: 0 2px 10px 0 #074b83;
+
 }
 
 .taskText {
