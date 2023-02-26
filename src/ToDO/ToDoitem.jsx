@@ -7,9 +7,7 @@ const ToDoItemFun = (props) => {
       
       <div className="allTask">
         <div className="taskText">{props.inpTextProps}</div>
-        <button className="done btnstyle "  
-          onClick={}
-        >done</button>
+        <button className="done btnstyle " onClick={props.addDoneProps}>done</button>
         <button className="delete btnstyle ">delete</button>
       </div>
     </div>
