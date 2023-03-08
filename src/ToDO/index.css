@@ -150,6 +150,7 @@ body {
     justify-items: center;
     align-items: center;
     min-width: 400px;
+   margin-top: 70px; 
     padding: 30px;
     background-color: #1F2833;
     border-radius: 10px;
