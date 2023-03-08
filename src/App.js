@@ -1,8 +1,7 @@
 import React from 'react';
 import './App.css';
-
-import ToDoitem from './ToDO/ToDoitem'
-import TodoData from './ToDO/TodoData'
+import ToDoItemFun from './ToDO/ToDoitem'
+import todoDateArr from './ToDO/TodoData'
 
 function App() {
 
@@ -10,9 +9,9 @@ function App() {
     console.log('DONe',id)
   }
 
-  const todoItems = TodoData.map(itemArr => {
+  const todoItems = todoDateArr.map(itemArr => {
     return (
-      <ToDoitem
+      <ToDoItemFun
         key={todoDateArr._id}
         inpTextProps={todoDateArr.inpText}
         addDoneProps={() => { doneAddFun(todoDateArr._id) }}
@@ -27,3 +26,6 @@ function App() {
     </div>
   );
 }
+
+export default App;
+
