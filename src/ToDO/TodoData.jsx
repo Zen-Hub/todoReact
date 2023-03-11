@@ -4,7 +4,7 @@ import "./index.css";
 const todoDateArr = [
   {
     _id: 0,
-    inpText: "GO BALI",
+    inpText: "GO BALI on program",
     isChecked: true,
   },
   {
