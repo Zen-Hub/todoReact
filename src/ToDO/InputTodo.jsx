@@ -8,7 +8,7 @@ const Input = (props) => {
         <div>
 
 
-           <input className="inpTask" type="text" />
+          
 
            <button className="btnstyle">DONE</button>
            
