@@ -6,9 +6,11 @@ const ToDoItemFun = (props) => {
     <div>
       
       <div className="allTask">
+        
+
         <div className="taskText">{props.inpTextProps}</div>
-        <button className="done btnstyle " onClick={props.addDoneProps}>done</button>
-        <button className="delete btnstyle ">delete</button>
+        <button className="done btnstyle" onClick={props.funAddDoneProps}>done</button>
+        <button className="delete btnstyle">delete</button>
       </div>
     </div>
   );
