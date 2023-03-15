@@ -17,9 +17,9 @@ function App() {
   const todoItems = todoDateArr.map(itemArr => {
     return (
       <ToDoItemFun
-        key={todoDateArr._id}
-        inpTextProps={todoDateArr.inpText}
-        funAddDoneProps={(id) => { doneAddFun(todoDateArr._id) }}
+        key={itemArr._id}
+        inpTextProps={itemArr.inpText}
+        funAddDoneProps={(id) => { doneAddFun() }}
       />
     )
   })
