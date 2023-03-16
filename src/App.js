@@ -19,7 +19,7 @@ function App() {
       <ToDoItemFun
         key={itemArr._id}
         inpTextProps={itemArr.inpText}
-        funAddDoneProps={(id) => { doneAddFun() }}
+        funAddDoneProps={() => { doneAddFun(itemArr._id) }}
       />
     )
   })
