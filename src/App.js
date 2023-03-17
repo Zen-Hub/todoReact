@@ -1,37 +1,45 @@
-import React from 'react';
+import React, { Component } from 'react';
 import './App.css';
 import ToDoItemFun from './ToDO/ToDoitem'
 import todoDateArr from './ToDO/TodoData'
 import Input from './ToDO/InputTodo'
 
-function App() {
+class App extends Component {
 
-  
-
-  const doneAddFun = (id) => {
-    console.log('DONE',id)
+  constructor(){
+    super()
+    
   }
 
+  render(){
+    doneAddFun = (id) => {
+      console.log('DONE',id)
+    }
+  
+    
+  
+    todoItems = todoDateArr.map(itemArr => {
+      return (
+        <ToDoItemFun
+          key={itemArr._id}
+          inpTextProps={itemArr.inpText}
+          funAddDoneProps={() => { doneAddFun(itemArr._id) }}//прокидываем функцию
+        />
+      )
+    })
+  
+    return (
+      <div className="App">
+  
+        
+        {todoItems}
+  
+      </div>
+    );
+  }
   
 
-  const todoItems = todoDateArr.map(itemArr => {
-    return (
-      <ToDoItemFun
-        key={itemArr._id}
-        inpTextProps={itemArr.inpText}
-        funAddDoneProps={() => { doneAddFun(itemArr._id) }}
-      />
-    )
-  })
-
-  return (
-    <div className="App">
-
-      
-      {todoItems}
-
-    </div>
-  );
+  
 }
 
 export default App;
