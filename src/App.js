@@ -4,21 +4,25 @@ import ToDoItemFun from './ToDO/ToDoitem'
 import todoDateArr from './ToDO/TodoData'
 import Input from './ToDO/InputTodo'
 
-class App extends Component {
+function App () {
 
-  constructor(){
-    super()
-    
-  }
+  const activeTask = todoDateArr.map(itemArr => {
+      return (
+        <ToDoItemFun
+          key={itemArr._id}
+          inpTextProps={itemArr.inpText}
+          funAddDoneProps={() => { doneAddFun(itemArr._id) }}//прокидываем функцию
+        />
+      )
+    })
 
-  render(){
-    doneAddFun = (id) => {
+   const doneAddFun = (id) => {
       console.log('DONE',id)
     }
   
     
   
-    todoItems = todoDateArr.map(itemArr => {
+    const todoItems = todoDateArr.map(itemArr => {
       return (
         <ToDoItemFun
           key={itemArr._id}
@@ -36,7 +40,7 @@ class App extends Component {
   
       </div>
     );
-  }
+  
   
 
   
