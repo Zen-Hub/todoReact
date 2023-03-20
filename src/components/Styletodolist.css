@@ -1,0 +1,248 @@
+/* Reset and base styles  */
+* {
+    padding: 0px;
+    margin: 0px;
+    border: none;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+:focus,
+:active {
+    outline: none;
+}
+
+a:focus,
+a:active {
+    outline: none;
+}
+
+/* Links */
+
+a,
+a:link,
+a:visited {
+    /* color: inherit; */
+    text-decoration: none;
+    /* display: inline-block; */
+}
+
+a:hover {
+    /* color: inherit; */
+    text-decoration: none;
+}
+
+/* Common */
+
+aside,
+nav,
+footer,
+header,
+section,
+main {
+    display: block;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    font-size: inherit;
+    font-weight: inherit;
+}
+
+ul,
+ul li {
+    list-style: none;
+}
+
+img {
+    vertical-align: top;
+}
+
+img,
+svg {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Form */
+
+input,
+textarea,
+button,
+select {
+    font-family: inherit;
+    font-size: inherit;
+    color: inherit;
+    background-color: transparent;
+}
+
+input::-ms-clear {
+    display: none;
+}
+
+button,
+input[type="submit"] {
+    display: inline-block;
+    box-shadow: none;
+    background-color: transparent;
+    background: none;
+    cursor: pointer;
+}
+
+input:focus,
+input:active,
+button:focus,
+button:active {
+    outline: none;
+}
+
+button::-moz-focus-inner {
+    padding: 0;
+    border: 0;
+}
+
+label {
+    cursor: pointer;
+}
+
+legend {
+    display: block;
+}
+
+/*****************************/
+
+body {
+    background-color: #1F2833;
+    color: #86B3D1;
+    font-family: sans-serif;
+    -webkit-box-sizing: content-box;
+    box-sizing: content-box;
+}
+
+/*свойства width и height задавали размеры не содержимого, а размеры блока*/
+
+.container {
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    min-height: 60px;
+}
+
+/* Добавляем этот класс если дело важное */
+/* .important {
+    font-weight: bold;
+    color: #A40E11;
+} */
+
+/* <-----------------------------------------> */
+
+.todo_list {
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    min-width: 400px;
+    padding: 30px;
+    background-color: #1F2833;
+    border-radius: 10px;
+
+    -webkit-box-shadow: 0 2px 10px 0 #074b83;
+    /*тень с поддержкой старых браузеров*/
+    box-shadow: 0 2px 10px 0 #074b83;
+}
+
+h1 {
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 20px;
+    color: #86B3D1;
+    font-size: 30px;
+}
+
+
+.inpTask {
+    width: 376px;
+    padding: 10px;
+    margin: 25px;
+    border: 1px solid #e9700e;
+    border-radius: 5px;
+    box-shadow: 0 2px 10px 0 #074b83;
+
+
+}
+
+
+
+.allTask {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 5px;
+    min-width: 200px;
+    margin: 10px;
+    border: 1px solid #0ee9a7;
+    border-radius: 5px;
+    box-shadow: 0 2px 10px 0 #074b83;
+
+}
+
+.taskText {
+    display: grid;
+    flex-direction: column;
+    align-items: center;
+    min-width: 50px;
+    margin: 5px;
+}
+
+.done{
+    border: 1px solid #2F4454;
+    color:#2F4454;
+    transition: all 0.1s ease-out;
+}
+
+.btnstyle {
+
+    border: 1px solid #2F4454;
+    margin-bottom: 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    color: #4D6D9A;
+}
+
+.btnstyle:hover {
+    transition: all 0.2s;
+    box-shadow: 0 2px 10px 0 #074b83;
+
+}
+
+.btnAdd {
+    margin-top: 10px;
+    border: 1px solid #2F4454;
+    width: 376px;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    color: #4D6D9A;
+}
+
+.btnDone {
+    min-width: 16px;
+}
+
+.btnDelete {
+    min-width: 16px;
+}
+
+.btnLi{
+    margin: 5px;
+}
+
+
